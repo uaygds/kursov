@@ -1,0 +1,103 @@
+.offer{
+    margin-top: 77px;
+
+}
+
+.offer__title{
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 68px;
+    text-align: center;
+    color: $black;
+    margin-bottom: 66px;
+}
+
+.offer__body {
+    background-image: url("../img/bg2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1050px;
+    width: 100%;
+    padding: 0 150px;
+    padding-top: 6px;
+
+    display: grid;
+
+    justify-content: center;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: 310px 40px 180px 100px 50px 102px 100px; 
+    grid-template-areas: "phone3 phone2 phone1"
+                         "title1 title2 title3"
+                         "desc1 desc2 desc3"
+                         "timer content1 content2"
+                         "timer content3 content4"
+                         "timer content5 content6"
+                         "timer content7 content7"
+                         "timer content8 content8";
+
+}
+
+.iphone3-icon {
+    grid-area: phone3;
+}
+
+.iphone2-icon {
+    grid-area: phone2;
+}
+
+.iphone1-icon {
+    grid-area: phone1;
+}
+
+.title1 {
+    grid-area:title1;
+    @include offer__title;
+}
+
+.title2 {
+    grid-area:title2;
+    @include offer__title;
+}
+
+.title3 {
+    grid-area:title3;
+    @include offer__title;
+}
+
+.desc1 {
+    grid-area: desc1;
+    @include offer__desc;
+}
+
+.desc2 {
+    grid-area: desc2;
+    @include offer__desc;
+}
+
+.desc3 {
+    grid-area: desc3;
+    @include offer__desc;
+}
+
+.timer {
+    grid-area: timer;
+    margin-top:76px;
+}
+
+.effect__title {
+    grid-area: content5;
+    padding: 30px 0 0 0;
+    @include effect__title;
+}
+
+.effect__subtitle{
+    grid-area: content7;
+    @include effect__subtitle;
+}
+
+.effect__link{
+    grid-area: content8;
+    padding-top: 35px;
+    color: $red;
+
+}

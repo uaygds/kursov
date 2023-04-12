@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    padding: 0 130px;
+    height: 110px;
+    background: rgba(0, 0, 0, 0.3) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header__logo {
+    margin-right: 178px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 78px;
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

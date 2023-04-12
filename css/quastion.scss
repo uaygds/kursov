@@ -1,0 +1,62 @@
+.map {
+    width: 1200px;
+    height: 502px;
+    position: absolute;
+}
+
+.quastion__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 502px;
+    position: relative;
+    align-items: center;
+}
+
+.triangle {
+    position: absolute;
+    width: 1200px;
+    z-index: 2;
+    top: 0;
+    left: calc(50% - 600px);
+}
+
+.quastion__title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 61px;
+    color: $black;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 68px;
+
+
+}
+
+.quastion__text__items{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.quastion__text__items div{
+    text-align: center;
+}
+
+.item_text{
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 34px;
+    color: $black;
+}
+
+.item_dop {
+
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 33px;
+    color: $red!important;
+
+}
