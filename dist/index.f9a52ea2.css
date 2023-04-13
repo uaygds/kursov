@@ -355,6 +355,11 @@
   display: none;
 }
 
+#three:checked {
+  background-color: #0000;
+  border: 3px solid #283645;
+}
+
 .price {
   height: 534px;
   width: 100%;
