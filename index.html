@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../kursov/css/style.scss">
 </head>
 
-<body>
+<body class="body">
     <header class="header"> <!--HEADER START-->
         <div class="header__body">
             <div class="header__logo">
@@ -27,8 +27,9 @@
             <div class="header__burger" id="burger">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                     <title>paragraph-justify</title>
-                    <path class="burger-path" d="M0 2h32v4h-32zM0 8h32v4h-32zM0 14h32v4h-32zM0 20h32v4h-32zM0 26h32v4h-32z"></path>
-                    </svg>
+                    <path class="burger-path"
+                        d="M0 2h32v4h-32zM0 8h32v4h-32zM0 14h32v4h-32zM0 20h32v4h-32zM0 26h32v4h-32z"></path>
+                </svg>
             </div>
             <nav class="header__nav">
                 <a class="nav__link" href="#!">Главная</a>
@@ -36,7 +37,7 @@
                 <a class="nav__link" href="#!">Фотографии</a>
                 <a class="nav__link" href="#!">Контакты</a>
             </nav>
-        </div> 
+        </div>
         <div class="header__alt-nav" id="alt-nav">
             <a class="alt-nav__link" href="#!">Главная</a>
             <a class="alt-nav__link" href="#!">Конкурс</a>
@@ -48,7 +49,7 @@
         <div class="main__alt-title">
             Взгляните на жизнь
             иначе!
-        </div> 
+        </div>
         <div class="main__content">
             <div class="main__title">
                 Взгляните <br> на жизнь <br>
@@ -66,7 +67,7 @@
                 Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8
             </div>
         </div>
-        <img src="./img/phone.png" alt="" class="main__picture">
+        <img src="./img/main__phone.svg" alt="phone" class="main__picture">
         <div class="main__block">
             <button class="main__btn">
                 Скачать приложение
@@ -91,16 +92,16 @@
             <img class="iphone3-icon" src="./img/iphone3.png" alt="phone">
             <img class="iphone2-icon" src="./img/iphone2.png" alt="phone">
             <img class="iphone1-icon" src="./img/iphone1.png" alt="phone">
-            <img src="./img/iphonealt.png" alt="phone" class="alt-iphone">
+            <img src="./img/iphonealt.svg" alt="phone" class="alt-iphone">
             <div class="title1">
-                Поднимает 
+                Поднимает
                 настроение
             </div>
             <div class="title2">
                 Меняет мир вокруг
             </div>
             <div class="title3">
-                Заводит 
+                Заводит
                 новых друзей
             </div>
             <div class="desc1">
@@ -121,9 +122,7 @@
                 что положительный эффект от использования приложения <br> длится целые сутки!</div>
             <a href="#!" class="effect__link">Узнать больше об исследовании</a> <!--PHONE AND GRID END-->
     </section>
-
-    <!-- Стили в файле offer-->
-    <section class="alt__effect">                   
+    <section class="alt__effect">
         <div class="alt__effect__container">
             <div class="alt__effect__img">
                 <img class="timer__alt" src="./img/timerall.png" alt="timer">
@@ -139,14 +138,14 @@
     <section class="slider__body">
         <div class="quotes">
             <img src="./img/quotes.svg" alt="quotes">
-            <button class="slider-prev">
+            <button class="slider-prev"> <!--NAVIGATION ARROW 1-->
                 <svg width="22" height="41" viewBox="0 0 22 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="path_prev" opacity="0.3"
                         d="M2.0413 20.5035L21.7483 1.4144C21.8281 1.3379 21.8914 1.24683 21.9346 1.14646C21.9778 1.04608 22 0.938398 22 0.829635C22 0.720871 21.9778 0.613187 21.9346 0.512814C21.8914 0.41244 21.8281 0.321369 21.7483 0.24487C21.6686 0.167255 21.5738 0.105671 21.4694 0.0636507C21.365 0.0216304 21.2532 0 21.1401 0C21.0271 0 20.9153 0.0216304 20.8109 0.0636507C20.7065 0.105671 20.6117 0.167255 20.532 0.24487L0.252535 19.9088C0.17249 19.9862 0.108978 20.0781 0.0656429 20.1793C0.0223074 20.2805 0 20.389 0 20.4985C0 20.6081 0.0223074 20.7166 0.0656429 20.8178C0.108978 20.919 0.17249 21.0109 0.252535 21.0883L20.532 40.7621C20.6967 40.9157 20.9167 41.001 21.1453 41C21.3139 40.9985 21.4783 40.9488 21.6181 40.8572C21.7578 40.7656 21.8666 40.6362 21.9309 40.485C21.9952 40.3339 22.0122 40.1677 21.9797 40.0072C21.9473 39.8467 21.8668 39.6991 21.7483 39.5827L2.0413 20.5035Z"
                         fill="#615d5d" />
                 </svg>
             </button> <!--NAVIGATION ARROW 1-->
-            <button class="slider-next">
+            <button class="slider-next"> <!--NAVIGATION ARROW 2-->
                 <svg width="22" height="41" viewBox="0 0 22 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="path_next" opacity="0.3"
                         d="M19.9587 20.4965L0.251671 39.5856C0.171938 39.6621 0.108643 39.7532 0.065443 39.8535C0.0222435 39.9539 0 40.0616 0 40.1704C0 40.2791 0.0222435 40.3868 0.065443 40.4872C0.108643 40.5876 0.171938 40.6786 0.251671 40.7551C0.33144 40.8327 0.426224 40.8943 0.530588 40.9363C0.634953 40.9784 0.746847 41 0.859852 41C0.972857 41 1.08475 40.9784 1.18911 40.9363C1.29348 40.8943 1.38826 40.8327 1.46803 40.7551L21.7475 21.0912C21.8275 21.0138 21.891 20.9219 21.9344 20.8207C21.9777 20.7195 22 20.611 22 20.5015C22 20.3919 21.9777 20.2834 21.9344 20.1822C21.891 20.081 21.8275 19.9891 21.7475 19.9117L1.46803 0.237877C1.30326 0.0842934 1.08329 -0.00102615 0.85474 7.62939e-06C0.6861 0.00154114 0.52166 0.0511971 0.381939 0.14278C0.24222 0.234364 0.133411 0.363811 0.069088 0.51498C0.00476646 0.666149 -0.0122204 0.83234 0.0202503 0.992809C0.052721 1.15328 0.133209 1.30093 0.251671 1.41732L19.9587 20.4965Z"
@@ -228,19 +227,132 @@
                 <img src="./img/yes.svg" alt="galo4ka">
             </div>
             <div class="green shest">
-                <img src="./img/yes.svg" alt="galo4ka"> <!--YES END-->
+                <img src="./img/yes.svg" alt="galo4ka">
             </div>
             <div class="red odin">
-                <img src="./img/no.svg" alt="krestik"> <!--NO START-->
+                <img src="./img/no.svg" alt="krestik">
             </div>
             <div class="red dva">
                 <img src="./img/no.svg" alt="krestik">
             </div>
             <div class="red tri">
-                <img src="./img/no.svg" alt="krestik"> <!--NO END-->
+                <img src="./img/no.svg" alt="krestik">
+            </div>
+            <div class="table__inputs"> <!--TABLE INPUTS (display:none)-->
+                <input type="radio" name="table__check" id="table__first" class="table__first" checked>
+                <input type="radio" name="table__check" id="table__middle" class="table__middle">
+                <input type="radio" name="table__check" id="table__last" class="table__last">
             </div>
         </div>
-    </section> <!--GRID TABLE END-->
+        <div class="table__slider"> <!--TABLE SLIDER START-->
+            <div class="table__slider-line">
+                <div class="table__slide"> <!--ПЕРВЫЙ СЛАЙД НАЧАЛО-->
+                    <div class="table__slide__main__block">
+                        <div class="table__slide__block">
+                            <div class="table__slide__main">
+                                БАЗА
+                            </div>
+                            <div class="table__slide__price">
+                                1,99 USD
+                            </div>
+                        </div>
+                        <div class="table__slide__middle__item filter">
+                            <span>РОЗОВЫЙ ФИЛЬТР</span>
+                            <img src="./img/yes.svg" alt="yes">
+                        </div>
+                        <div class="table__slide__middle__item smile">
+                            <span>СМАЙЛИКИ</span>
+                            <img src="./img/no.svg" alt="no">
+                        </div>
+                        <div class="table__slide__middle__item comments">
+                            <span>КОММЕНТАРИИ</span>
+                            <img src="./img/no.svg" alt="no">
+                        </div>
+                    </div>
+                    <div class="table__slide__right-peace">
+                        <div class="peace__main right"></div>
+                        <div class="peace__row right"></div>
+                        <div class="peace__row right"></div>
+                        <div class="peace__row right"></div>
+                    </div>
+                </div> <!--ПЕРВЫЙ СЛАЙД КОНЕЦ-->
+                <div class="table__slide"> <!--ВТОРОЙ СЛАЙД НАЧАЛО-->
+                    <div class="table__slide__left-peace">
+                        <div class="peace__main left"></div>
+                        <div class="peace__row left"></div>
+                        <div class="peace__row left"></div>
+                        <div class="peace__row left"></div>
+                    </div>
+                    <div class="table__slide__main__block">
+                        <div class="table__slide__block std">
+                            <div class="table__ribbon">ХИТ</div> <!--ОБЕРТКА-->
+                            <div class="table__slide__main">
+                                СТАНДАРТ
+                            </div>
+                            <div class="table__slide__price">
+                                3,99 USD
+                            </div>
+                        </div>
+                        <div class="table__slide__middle__item filter">
+                            <span>РОЗОВЫЙ ФИЛЬТР</span>
+                            <img src="./img/yes.svg" alt="yes">
+                        </div>
+                        <div class="table__slide__middle__item smile">
+                            <span>СМАЙЛИКИ</span>
+                            <img src="./img/yes.svg" alt="yes">
+                        </div>
+                        <div class="table__slide__middle__item comments">
+                            <span>КОММЕНТАРИИ</span>
+                            <img src="./img/no.svg" alt="no">
+                        </div>
+                    </div>
+
+                    <div class="table__slide__right-peace">
+                        <div class="peace__main right"></div>
+                        <div class="peace__row right"></div>
+                        <div class="peace__row right"></div>
+                        <div class="peace__row right"></div>
+                    </div>
+                </div> <!--ВТОРОЙ СЛАЙД КОНЕЦ-->
+                <div class="table__slide"> <!--ТРЕТИЙ СЛАЙД НАЧАЛО-->
+                    <div class="table__slide__left-peace">
+                        <div class="peace__main left"></div>
+                        <div class="peace__row left"></div>
+                        <div class="peace__row left"></div>
+                        <div class="peace__row left"></div>
+                    </div>
+                    <div class="table__slide__main__block">
+                        <div class="table__slide__block">
+                            <div class="table__slide__main">
+                                АНЛИМ
+                            </div>
+                            <div class="table__slide__price">
+                                9,99 USD
+                            </div>
+                        </div>
+                        <div class="table__slide__middle__item filter">
+                            <span>РОЗОВЫЙ ФИЛЬТР</span>
+                            <img src="./img/yes.svg" alt="yes">
+                        </div>
+                        <div class="table__slide__middle__item smile">
+                            <span>СМАЙЛИКИ</span>
+                            <img src="./img/yes.svg" alt="yes">
+                        </div>
+                        <div class="table__slide__middle__item comments">
+                            <span>КОММЕНТАРИИ</span>
+                            <img src="./img/yes.svg" alt="yes">
+                        </div>
+                    </div>
+                </div>
+            </div> <!--ТРЕТИЙ СЛАЙД КОНЕЦ-->
+        </div> <!--TABLE SLIDER END-->
+        <div class="table__labels"> <!--TABLE LABELS-->
+            <label class="table__label1 active" for="table__first" id="table__one"></label>
+            <label class="table__label2" for="table__middle" id="table__two"></label>
+            <label class="table__label3" for="table__last" id="table__three"></label>
+        </div>
+        </div>
+    </section>
     <section class="quastion">
         <div class="quastion__title">Остались вопросы? <br>
             Свяжитесь с нами!</div>
@@ -259,11 +371,12 @@
                 <div class="item_dop">mail@htmlacademy.ru</div>
             </div>
         </div>
-        <div class="quastion__container"> <!--MAP CONTAINER START-->
-            <div class="triangle">
-                <img class="triangle-img" src="./img/footer.svg" alt="triangle">
-            </div>
-            <div class="map" id="map">
+        <div class="quastion__container">
+            <div class="map__container"> <!--MAP CONTAINER START-->
+                <div class="triangle">
+                    <img class="triangle-img" src="./img/footer.svg" alt="triangle">
+                </div>
+                <div class="map" id="map"></div>
             </div>
         </div> <!--MAP CONTAINER END-->
     </section>
@@ -286,8 +399,8 @@
             Разработано <img src="./img/logo2.svg" alt="academy">
         </div>
     </footer>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> <!--API FOR MAPS-->
-    <script src="./script.js"></script> <!--SCRIPT FOR SLIDER-->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

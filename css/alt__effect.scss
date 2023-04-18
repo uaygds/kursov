@@ -1,0 +1,47 @@
+.offer__body .alt-iphone {
+  display: none;
+}
+
+.alt__effect {
+  display: none;
+  margin-top: 54px;
+  padding: 0 20px;
+}
+
+.alt__effect {
+  width: 100%;
+}
+
+.alt__effect__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timer__alt {
+  margin-right: 72px;
+}
+
+.effect__title__alt {
+  text-align: left;
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+.effect__subtitle__alt {
+  text-align: left;
+  color: #283645;
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.effect__link__alt {
+  text-align: left;
+  color: $red;
+}

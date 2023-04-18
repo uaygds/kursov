@@ -1,41 +1,35 @@
-
 $black: #283645;
-$blue: #A1C4FD;
-$red: #D22856;
+$blue: #a1c4fd;
+$red: #d22856;
 
 @mixin offer__title {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: center;
-    color: black;
-    margin-top: 59px;
-
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: black;
+  margin-top: 59px;
 }
 
 @mixin offer__desc {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
-    color: $black;
-    margin-top: calc(59px + 35px);
-
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: $black;
+  margin-top: calc(59px + 35px);
 }
 
 @mixin effect__title {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 30px;
-    color: black;
-
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  color: black;
 }
 
 @mixin effect__subtitle {
-
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    color: $black;
-
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $black;
 }

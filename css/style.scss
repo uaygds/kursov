@@ -7,23 +7,21 @@
 @import "price.scss";
 @import "quastion.scss";
 @import "footer.scss";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import "table__slider.scss";
+@import "alt__effect.scss";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
-
-
+/* БАЗА */
 
 * {
-    margin: 0;
-    box-sizing: border-box;
-
-
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: "Open Sans";
+  font-family: "Open Sans";
 }
 
 body {
-    width: 100%;
-
+  width: 100%;
 }

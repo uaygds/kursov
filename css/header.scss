@@ -1,96 +1,89 @@
 .header__body {
-    width: 100vw;
-    padding: 0 130px;
-    height: 110px;
-    background: rgba(0, 0, 0, 0.3) ;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
+  width: 100vw;
+  padding: 0 130px;
+  height: 110px;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .header__logo {
-    margin-right: 178px;
+  margin-right: 178px;
 }
 
 .header__nav {
-    display: flex;
-    gap: 78px;
-    
-    a {
-        text-decoration: none;
-        color: white;
-    }
+  display: flex;
+  gap: 78px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
-
-
-.header__altlogo1{
-    display: none; /*Скрываем альтернативное лого 1*/
+.header__altlogo1 {
+  display: none; /*Скрываем альтернативное лого 1*/
 }
 
-.header__altlogo2{
-    display: none; /*Скрываем альтернативное лого 2*/
+.header__altlogo2 {
+  display: none; /*Скрываем альтернативное лого 2*/
 }
 
 .header__close {
-    display: none; /* Скрываем крестик*/
+  display: none; /* Скрываем крестик*/
 }
 
 .header__alt-nav {
-    display: none; /* Скрываем адаптивную шапку*/
+  display: none; /* Скрываем адаптивную шапку*/
 }
 
-.header__burger{
-    display: none; /* Скрываем адаптивный бургер*/
+.header__burger {
+  display: none; /* Скрываем адаптивный бургер*/
 }
 
-.burger-path{
-    fill: white; /* заливаем бургер белым цветом*/
-
+.burger-path {
+  fill: white; /* заливаем бургер белым цветом*/
 }
 
-#burger.burger-close{
-    display: none;  /* Скрываем бургер при добавлении класса burger-close*/
+#burger.burger-close {
+  display: none; /* Скрываем бургер при добавлении класса burger-close*/
 }
 
 #close.close-active {
-    display: block;     /* Показываем крестик при добавлении класса close-active*/
+  display: block; /* Показываем крестик при добавлении класса close-active*/
 }
 
-#close.close-non-active{
-    display: none;  /* Скрываем крестик при добавлении класса close-non-active*/
+#close.close-non-active {
+  display: none; /* Скрываем крестик при добавлении класса close-non-active*/
 }
 
-#burger.burger-active{
-    display: block;  /* Показываем бургер при добавлении класса burger-active*/
+#burger.burger-active {
+  display: block; /* Показываем бургер при добавлении класса burger-active*/
 }
 
-
-
-.header__alt-nav.alt-nav-active { /* Показываем адаптивную шапку при добавлении класса alt-nav-active*/
-    width: 100%;
-    position: fixed;
-    top: 109px;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-
+.header__alt-nav.alt-nav-active {     /* Показываем адаптивную шапку при добавлении класса alt-nav-active*/
+  width: 100%;
+  position: fixed;
+  top: 109px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
 }
 
-.alt-nav__link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 63px;
-    background: $black;
-    margin: 0 auto;
-    text-decoration: none;
-    color: white;
-    border: 1px solid black;
+.alt-nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 63px;
+  background: $black;
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  border: 1px solid black;
 }
-

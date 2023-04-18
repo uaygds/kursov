@@ -2,8 +2,8 @@
 .main {
   -webkit-background-size: cover;
   width: 100%;
-  height: 853px;
-  background-image: url("bg.cc7365bd.jpg");
+  height: 969px;
+  background-image: url("back-desktop.afa0a23b.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +18,7 @@
   text-align: center;
   color: #fff;
   z-index: 2;
-  margin-top: 224px;
+  margin-top: 245px;
   font-size: 50px;
   font-weight: 300;
   line-height: 68px;
@@ -173,7 +173,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   grid-template-rows: 310px 40px 180px 100px 50px 102px 100px;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(3, 348px);
   grid-template-areas: "phone3 phone2 phone1"
                        "title1 title2 title3"
                        "desc1 desc2 desc3"
@@ -287,62 +287,13 @@
   padding-top: 35px;
 }
 
-.alt-iphone {
-  display: none;
-}
-
-.alt__effect {
-  width: 100%;
-  margin-top: 54px;
-  padding: 0 20px;
-  display: none;
-}
-
-.alt__effect__container {
-  width: 100%;
-  height: 100%;
-  justify-content: space-between;
-  display: flex;
-}
-
-.timer__alt {
-  margin-right: 72px;
-}
-
-.effect__title__alt {
-  text-align: left;
-  color: #000;
-  margin-bottom: 24px;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-}
-
-.effect__subtitle__alt {
-  text-align: left;
-  color: #283645;
-  margin-bottom: 24px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.effect__link__alt {
-  text-align: left;
-  color: #d22856;
-}
-
 @media (max-width: 1420px) {
   .slider-next, .slider-prev {
     display: none;
   }
 
-  .text {
-    max-width: 70% !important;
-  }
-
-  .labels {
-    display: flex !important;
+  .slider .labels {
+    display: flex;
   }
 }
 
@@ -366,12 +317,16 @@
     display: block;
   }
 
+  .main {
+    height: 785px;
+  }
+
   .main__picture {
-    max-width: 800px;
+    max-width: 790px;
   }
 
   .main__content {
-    margin-top: 355px;
+    margin-top: 305px;
     line-height: 40px;
   }
 
@@ -389,101 +344,13 @@
   }
 }
 
-@media (max-width: 850px) {
-  .footer {
-    flex-direction: column;
-    margin-top: 40px;
-  }
-
-  .item-text {
-    margin-bottom: 10px;
-  }
-
-  .quastion__title {
-    padding: 0 20px;
-    font-size: 38px !important;
-  }
-
-  .quastion__text__items {
-    flex-direction: column;
-    gap: 20px !important;
-  }
-
-  .main {
-    padding: 0 15px;
-  }
-
-  .main__picture {
-    max-width: 700px;
-    transform: translate(20px);
-  }
-
-  .main__content {
-    margin-top: 420px;
-  }
-
-  .main__btn, .main__descrtiption {
-    margin-top: 25px;
-  }
-}
-
-@media (max-width: 660px) {
-  .header__altlogo2 {
-    display: block;
-  }
-
-  .header__altlogo1, .prof {
-    display: none;
-  }
-
-  .slide {
-    flex-direction: column-reverse !important;
-  }
-}
-
-@media (max-width: 635px) {
-  .main__block {
-    display: block;
-  }
-
-  .main__alt-title {
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 29px;
-    display: block;
-    position: absolute;
-    top: 150px;
-  }
-
-  .main__content {
-    display: none;
-  }
-
-  .main__block {
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-  }
-
-  .main__picture {
-    max-width: 600px;
-    margin: 0 auto;
-    bottom: 230px;
-    left: 50%;
-    transform: translateX(calc(-30% - 180px));
-  }
-}
-
 @media (max-width: 1060px) {
   .iphone3-icon, .iphone2-icon, .iphone1-icon {
     display: none;
   }
 
-  .alt-iphone {
-    width: 300px;
+  .offer .offer__body .alt-iphone {
+    width: 280px;
     margin-left: 20px;
     display: block;
   }
@@ -493,7 +360,7 @@
   }
 
   .offer__body {
-    height: 547px;
+    height: 510px;
     grid-template-rows: 20px 150px 20px 150px 20px 150px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "phone content1"
@@ -538,7 +405,7 @@
     color: #000;
     text-align: left;
     grid-area: content5;
-    margin-top: 59px;
+    margin-top: 47px;
     font-size: 22px;
     font-weight: 700;
     line-height: 30px;
@@ -571,14 +438,76 @@
     color: #283645;
     text-align: left;
     grid-area: content6;
-    margin-top: 94px;
+    margin-top: 75px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 25px;
   }
 
   .alt__effect {
     display: block;
+  }
+}
+
+@media (max-width: 960px) {
+  .price .grid__table {
+    grid-template-columns: repeat(4, 200px);
+  }
+
+  .grid__table .standart .ribbon {
+    bottom: 60%;
+    right: 35%;
+  }
+
+  .body .price {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  .price .grid__table {
+    grid-template-columns: repeat(4, 150px);
+  }
+
+  .grid__table .standart .ribbon {
+    bottom: 70%;
+    right: 20%;
+  }
+
+  .footer {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .item-text {
+    margin-bottom: 10px;
+  }
+
+  .quastion .quastion__title {
+    padding: 0 20px;
+    font-size: 38px;
+  }
+
+  .quastion .quastion__text__items {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main {
+    height: 755px;
+    padding: 0 15px;
+  }
+
+  .main__picture {
+    max-width: 700px;
+  }
+
+  .main__content {
+    margin-top: 330px;
+  }
+
+  .main__btn, .main__descrtiption {
+    margin-top: 25px;
   }
 }
 
@@ -590,8 +519,8 @@
     display: flex;
   }
 
-  .text, .name, .prof {
-    width: 512px !important;
+  .slide .text, .slide .name, .slide .prof {
+    width: 512px;
   }
 
   .quotes {
@@ -601,7 +530,7 @@
 
 @media (max-width: 705px) {
   .offer__title {
-    margin-bottom: 20px;
+    margin-bottom: -15px;
     padding: 0 15px;
     font-size: 40px;
     line-height: 54px;
@@ -612,7 +541,7 @@
   }
 
   .offer__body {
-    height: 1185px;
+    height: 1150px;
     grid-template: "content1" 40px
                    "content2" 170px
                    "content3" 20px
@@ -623,7 +552,7 @@
                    / 100%;
     justify-content: center;
     justify-items: center;
-    padding: 0 20px;
+    padding: 0 5px;
   }
 
   .alt-iphone {
@@ -693,19 +622,115 @@
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 660px) {
+  .price .grid__table {
+    display: none;
+  }
+
+  .body .price .table__slider, .body .price .table__labels {
+    display: flex;
+  }
+
+  .header__altlogo2 {
+    display: block;
+  }
+
+  .header__altlogo1 {
+    display: none;
+  }
+
+  .main {
+    height: 775px;
+  }
+
+  .prof {
+    display: none;
+  }
+
+  .slider-line .slide {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 635px) {
+  .main__block {
+    display: block;
+  }
+
   .main__alt-title {
-    font-size: 20px;
+    width: 300px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: calc(50% - 150px);
+  }
+
+  .main__content {
+    display: none;
+  }
+
+  .main__block {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .main {
+    height: 830px;
+  }
+
+  .main__picture {
+    max-width: 560px;
+    margin: 0 auto;
+    bottom: 230px;
+    left: 50%;
+    transform: translateX(calc(-30% - 195px));
+  }
+}
+
+@media (max-width: 511px) {
+  .main__picture {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 485px) {
+  .main__picture {
+    max-width: 417px;
+    transform: translateX(calc(-30% - 140px));
+  }
+
+  .main {
+    height: 735px;
   }
 }
 
 @media (max-width: 410px) {
-  .quastion__title {
-    font-size: 28px !important;
+  .quastion .quastion__title {
+    font-size: 28px;
   }
 
   .offer__title {
     font-size: 31px;
+  }
+}
+
+@media (max-width: 370px) {
+  .main__alt-title {
+    font-size: 20px;
+  }
+
+  .alt-iphone {
+    width: 270px;
+  }
+
+  .offer__body {
+    height: 1150px;
   }
 }
 
@@ -817,8 +842,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 74px;
-  padding: 159px 130px 0;
-  display: none;
+  padding: 159px 0 0;
 }
 
 .grid__table {
@@ -918,13 +942,13 @@
 
 .span__name {
   margin-bottom: -20px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 30px;
 }
 
 .span__price {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 30px;
 }
@@ -934,12 +958,14 @@
   overflow: hidden;
 }
 
-.ribbon {
+.standart .ribbon {
   height: 18px;
   width: 200px;
   z-index: 4;
   text-align: center;
   text-align: center;
+  color: #fff;
+  background-color: #d22856;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -947,34 +973,39 @@
   bottom: 50px;
   right: 100px;
   transform: rotate(-45deg);
-  color: #fff !important;
-  background-color: red !important;
 }
 
 .quastion__container {
-  width: 1200px;
-  height: 502px;
-  justify-content: center;
+  height: 500px;
+}
+
+.map__container {
+  width: 100%;
+  height: 500px;
+  flex-direction: column;
   align-items: center;
   display: flex;
-  position: relative;
+  position: absolute;
 }
 
 .map {
-  max-width: 100%;
+  width: 100%;
   height: 502px;
   position: absolute;
 }
 
 .triangle {
-  width: 100vw;
+  width: 100%;
   z-index: 2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   position: absolute;
   top: -1px;
 }
 
 .triangle-img {
-  width: 1200px;
+  width: 100%;
 }
 
 .quastion__title {
@@ -1043,6 +1074,165 @@
   align-items: center;
   gap: 15px;
   display: flex;
+}
+
+.table__slider-line {
+  transition: all .2s;
+  display: flex;
+}
+
+.table__slide {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.table__slide__main__block {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.table__slide__block {
+  width: 260px;
+  height: 94px;
+  background-color: #283645;
+  border: 1px solid #e5e5e5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.table__slide__main {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.table__slide__price {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.table__filters {
+  flex-direction: column;
+  display: flex;
+}
+
+.peace__main {
+  height: 94px;
+  background-color: #283645;
+  border: 1px solid #e5e5e5;
+}
+
+.peace__row {
+  height: 59px;
+  background-color: #fff;
+  border: .5px solid #e5e5e5;
+}
+
+.table__slide__middle__item.filter, .smile, .comments {
+  width: 100%;
+  height: 59px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+  display: flex;
+}
+
+.table__slide__block.std {
+  position: relative;
+}
+
+.table__slide__block.std .table__ribbon {
+  height: 18px;
+  width: 200px;
+  z-index: 4;
+  text-align: center;
+  text-align: center;
+  color: #fff;
+  background-color: #d22856;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  display: flex;
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  transform: rotate(-45deg);
+}
+
+.std, .table__slider {
+  overflow: hidden;
+}
+
+#table__one, #table__two, #table__three {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.table__labels {
+  width: 100px;
+  margin: 20px auto 0;
+  display: flex;
+}
+
+.price .table__inputs, .price .table__slider, .price .table__labels, .offer__body .alt-iphone {
+  display: none;
+}
+
+.alt__effect {
+  width: 100%;
+  margin-top: 54px;
+  padding: 0 20px;
+  display: none;
+}
+
+.alt__effect__container {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.timer__alt {
+  margin-right: 72px;
+}
+
+.effect__title__alt {
+  text-align: left;
+  color: #000;
+  margin-bottom: 24px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.effect__subtitle__alt {
+  text-align: left;
+  color: #283645;
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.effect__link__alt {
+  text-align: left;
+  color: #d22856;
 }
 
 * {
