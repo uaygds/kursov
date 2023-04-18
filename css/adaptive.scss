@@ -1,0 +1,379 @@
+@media(max-width:1420px){
+    .slider-next, .slider-prev {
+        display: none;
+    }
+    
+    .text {
+        max-width: 70%!important;
+    }
+
+    .labels{
+        display: flex!important;
+    }                   /*Включение лэйблов вместо стрелок для слайдера с отзывами */
+}
+
+@media(max-width:1100px) and (min-width:0px){
+    .header__body {
+        background: $black;
+        height: 109px;
+        padding: 0 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .header__altlogo1{
+        display: block; /*Показываем альтернативное лого 1*/
+    }
+
+    .header__logo {
+        display: none; /*Скрываем основное лого */
+    }
+    .header__nav {
+        display: none;
+    }
+
+    .header__burger{
+        display: block;
+    }
+
+    .main__picture{
+        max-width: 800px;
+    }
+
+
+    .main__content {
+        line-height: 40px;
+        margin-top: 355px;
+    }
+
+    .main__title {
+        font-size: 35px;
+    }
+
+    .main__btn{
+        width: 270px;
+        font-size: 15px;
+    }
+
+    .social {
+        margin-top: 25px;
+    }
+}
+
+
+
+
+@media(max-width:850px){
+    .footer {
+        flex-direction: column;
+        margin-top: 40px ;
+    }
+
+
+    .item-text{
+        margin-bottom: 10px;
+
+    }
+
+    .quastion__title{
+        font-size: 38px!important;
+        padding: 0 20px;
+    }
+
+
+    .quastion__text__items{
+        gap: 20px!important;
+        flex-direction: column;
+    }
+    .main {
+        padding: 0 15px;
+    }
+
+    .main__picture{
+        max-width: 700px;
+        transform: translate(20px, 0);
+    }
+
+    .main__content {
+        margin-top: 420px;
+    }
+
+    .main__btn{
+        margin-top: 25px;
+    }
+
+    .main__descrtiption{
+        margin-top: 25px;
+    }
+}
+
+@media (max-width:660px){
+    .header__altlogo2{
+        display: block; /*Показываем альтернативное лого 2*/
+    }
+
+    .header__altlogo1{
+        display: none; /*Скрываем альтернативное лого 1*/
+    }
+
+    .prof {
+        display: none;
+    }
+
+    .slide {
+        flex-direction: column-reverse!important;
+    }
+    
+}
+
+@media (max-width:635px){
+
+
+    .main__block{
+        display: block;
+    }
+
+    .main__alt-title{
+      display: block;
+      width: 100%;
+      color: white;
+      position: absolute;
+      top: 150px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 29px;
+
+    }
+
+    .main__content{
+        display: none;
+    }
+
+    .main__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__picture{
+        bottom: 230px;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(calc(-30% - 180px));
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width:1060px){
+
+    .iphone3-icon, .iphone2-icon, .iphone1-icon{
+        display: none;
+    }
+
+
+
+
+    .alt-iphone{
+        display: block;
+        width: 300px;
+        margin-left: 20px;
+
+    }
+
+    .timer {
+        display: none;
+    }
+
+    .effect__title {
+        display: none;
+    }
+    
+    .effect__subtitle{
+        display: none;
+    }
+    
+    .effect__link{
+        display: none;
+    
+    }
+
+    .offer__body {
+        justify-content: center;
+
+        height: 547px;
+        padding: 0 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 20px 150px 20px 150px 20px 150px;
+        grid-template-areas: "phone content1"
+                             "phone content2"
+                             "phone content3"
+                             "phone content4"
+                             "phone content5"
+                             "phone content6";
+    }
+    
+    .alt-iphone{
+        grid-area: phone;
+        margin-right: 40px;
+    }
+
+    .title1 {
+
+        grid-area:content1;
+        @include offer__title;
+        font-size: 22px;
+        text-align: left;
+    }
+    
+    .title2 {
+
+        grid-area:content3;
+        @include offer__title;
+        font-size: 22px;
+        text-align: left;
+    }
+    
+    .title3 {
+
+        grid-area:content5;
+        @include offer__title;
+        font-size: 22px;
+        text-align: left;
+    }
+    
+    .desc1 {
+        grid-area: content2;
+        @include offer__desc;
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    .desc2 {
+        grid-area: content4;
+        @include offer__desc;
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    .desc3 {
+        grid-area: content6;
+        @include offer__desc;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .alt__effect{
+        display: block;
+    }
+}
+
+@media (max-width:730px){
+    .slide {
+        display: flex;
+        flex-direction: column;
+        width: 688px;
+        align-items: center;
+    }
+
+    .text, .name, .prof {
+        width: 512px!important;
+    }
+
+    .quotes {
+        display: none;
+    }
+
+}
+
+@media (max-width:705px){
+
+    .offer__title{
+        font-size: 40px;
+        line-height: 54px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+    }
+
+    .alt__effect {
+        display: none;
+    }
+
+    .offer__body {
+        justify-content: center;
+        justify-items: center;
+        height: 1185px;
+        padding: 0 20px;
+        grid-template-columns: 100%;
+        grid-template-rows: 40px 170px 20px 150px 40px 150px 100px; /*Багуля*/
+        grid-template-areas: "content1"
+                             "content2"
+                             "content3"
+                             "content4"
+                             "content5"
+                             "content6"
+                             "phone";
+    }
+    
+    .alt-iphone{
+        grid-area: phone;
+        margin-top: 70px;
+        margin-right: 0px;
+    }
+
+    .title1 {
+
+        grid-area:content1;
+        @include offer__title;
+        font-size: 22px;
+    }
+    
+    .title2 {
+
+        grid-area:content3;
+        @include offer__title;
+        font-size: 22px;
+    }
+    
+    .title3 {
+
+        grid-area:content5;
+        @include offer__title;
+        font-size: 22px;
+    }
+    
+    .desc1 {
+        grid-area: content2;
+        @include offer__desc;
+        font-size: 16px;
+    }
+    
+    .desc2 {
+        grid-area: content4;
+        @include offer__desc;
+        font-size: 16px;
+    }
+    
+    .desc3 {
+        grid-area: content6;
+        @include offer__desc;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width:370px){
+    .main__alt-title{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:410px){
+    .quastion__title{
+        font-size: 28px!important;
+    }
+
+    .offer__title{
+        font-size: 31px;
+    }
+}

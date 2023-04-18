@@ -41,6 +41,8 @@
     cursor: pointer;
 }
 
+
+
 .social {
     display: flex;
     margin-top: 75px;
@@ -63,4 +65,19 @@
     right: 0;
     z-index: 1;
     max-width: 1050px;
+}
+
+.main__block {
+    margin-left: -15px; /*Убираю паддинг*/
+    bottom: 0;
+    position: absolute;
+    height: 271px;
+    display: none;
+    width: 100%;
+    background-color: #1D2631;
+    z-index: 3;
+}
+
+.main__alt-title{
+    display: none;
 }

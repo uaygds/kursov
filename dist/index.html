@@ -11,17 +11,44 @@
 
 <body>
     <header class="header"> <!--HEADER START-->
-        <div class="header__logo">
-            <img src="/LOGO.98491ca0.svg" alt="logo">
+        <div class="header__body">
+            <div class="header__logo">
+                <img src="/LOGO.98491ca0.svg" alt="logo">
+            </div>
+            <div class="header__altlogo1">
+                <img src="/altlogo1.4621911f.svg" alt="logo">
+            </div>
+            <div class="header__altlogo2">
+                <img src="/altlogo2.d344dc2a.svg" alt="logo">
+            </div>
+            <div class="header__close" id="close">
+                <img src="/close.996aed91.svg" alt="close">
+            </div>
+            <div class="header__burger" id="burger">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32">
+                    <title>paragraph-justify</title>
+                    <path class="burger-path" d="M0 2h32v4h-32zM0 8h32v4h-32zM0 14h32v4h-32zM0 20h32v4h-32zM0 26h32v4h-32z"></path>
+                    </svg>
+            </div>
+            <nav class="header__nav">
+                <a class="nav__link" href="#!">Главная</a>
+                <a class="nav__link" href="#!">Конкурс</a>
+                <a class="nav__link" href="#!">Фотографии</a>
+                <a class="nav__link" href="#!">Контакты</a>
+            </nav>
+        </div> 
+        <div class="header__alt-nav" id="alt-nav">
+            <a class="alt-nav__link" href="#!">Главная</a>
+            <a class="alt-nav__link" href="#!">Конкурс</a>
+            <a class="alt-nav__link" href="#!">Фотографии</a>
+            <a class="alt-nav__link" href="#!">Контакты</a>
         </div>
-        <nav class="header__nav">
-            <a class="nav__link" href="#!">Главная</a>
-            <a class="nav__link" href="#!">Конкурс</a>
-            <a class="nav__link" href="#!">Фотографии</a>
-            <a class="nav__link" href="#!">Контакты</a>
-        </nav>
     </header> <!--HEADER END-->
     <main class="main"> <!--MAIN START-->
+        <div class="main__alt-title">
+            Взгляните на жизнь
+            иначе!
+        </div> 
         <div class="main__content">
             <div class="main__title">
                 Взгляните <br> на жизнь <br>
@@ -40,6 +67,19 @@
             </div>
         </div>
         <img src="/phone.f0c61907.png" alt="" class="main__picture">
+        <div class="main__block">
+            <button class="main__btn">
+                Скачать приложение
+            </button>
+            <div class="social">
+                <img src="/apple-logo.e81db071.svg" alt="apple">
+                <img src="/android-logo.7a5afc3c.svg" alt="android">
+                <img src="/microsoft-logo.968266ef.svg" alt="microsoft">
+            </div>
+            <div class="main__descrtiption">
+                Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8
+            </div>
+        </div>
     </main> <!--MAIN END-->
     <section class="offer"> <!--PHONE AND GRID START-->
         <div class="offer__title">
@@ -51,15 +91,16 @@
             <img class="iphone3-icon" src="/iphone3.214cd672.png" alt="phone">
             <img class="iphone2-icon" src="/iphone2.6e271354.png" alt="phone">
             <img class="iphone1-icon" src="/iphone1.e1771a13.png" alt="phone">
+            <img src="/iphonealt.3b6fe1cf.png" alt="phone" class="alt-iphone">
             <div class="title1">
-                Поднимает <br>
+                Поднимает 
                 настроение
             </div>
             <div class="title2">
-                Меняет мир <br>вокруг
+                Меняет мир вокруг
             </div>
             <div class="title3">
-                Заводит <br>
+                Заводит 
                 новых друзей
             </div>
             <div class="desc1">
@@ -80,6 +121,21 @@
                 что положительный эффект от использования приложения <br> длится целые сутки!</div>
             <a href="#!" class="effect__link">Узнать больше об исследовании</a> <!--PHONE AND GRID END-->
     </div></section>
+
+    <!-- Стили в файле offer-->
+    <section class="alt__effect">                   
+        <div class="alt__effect__container">
+            <div class="alt__effect__img">
+                <img class="timer__alt" src="/timerall.2630120f.png" alt="timer">
+            </div>
+            <div class="alt__effect__content">
+                <div class="effect__title__alt">Эффект на 24 часа!</div>
+                <div class="effect__subtitle__alt">Британские ученые провели исследования и доказали, <br>
+                    что положительный эффект от использования приложения <br> длится целые сутки!</div>
+                <a href="#!" class="effect__link__alt">Узнать больше об исследовании</a>
+            </div>
+        </div>
+    </section>
     <section class="slider__body">
         <div class="quotes">
             <img src="/quotes.0293b778.svg" alt="quotes">
@@ -117,12 +173,13 @@
                     <div class="prof">22 лет, неизвестно</div>
                 </div>
             </div>
+            <div class="labels"> <!--LABELS FOR ADAPTIVE-->
+                <label class="label1 active" for="first" id="one"></label>
+                <label class="label2" for="middle" id="two"></label>
+                <label class="label3" for="last" id="three"></label>
+            </div>
         </div> <!--SLIDER END-->
-        <div class="labels"> <!--LABELS FOR ADAPTIVE-->
-            <label class="label1" for="first" id="one"></label>
-            <label class="label2" for="middle" id="two"></label>
-            <label class="label3" for="last" id="three"></label>
-        </div>
+
     </section>
     <section class="price"> <!--GRID TABLE START-->
         <div class="grid__table">
@@ -200,7 +257,7 @@
         </div>
         <div class="quastion__container"> <!--MAP CONTAINER START-->
             <div class="triangle">
-                <img src="/footer.16835008.svg" alt="">
+                <img class="triangle-img" src="/footer.16835008.svg" alt="triangle">
             </div>
             <div class="map" id="map">
             </div>

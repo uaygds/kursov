@@ -1,24 +1,29 @@
-.map {
-    width: 1200px;
-    height: 502px;
-    position: absolute;
-}
+
 
 .quastion__container {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 1200px;
     height: 502px;
     position: relative;
     align-items: center;
 }
 
+.map {
+    max-width: 100%;
+    height: 502px;
+    position: absolute;
+}
+
 .triangle {
     position: absolute;
-    width: 1200px;
+    width: 100vw;
     z-index: 2;
-    top: 0;
-    left: calc(50% - 600px);
+    top: -1px;
+}
+
+.triangle-img {
+width: 1200px;
 }
 
 .quastion__title {

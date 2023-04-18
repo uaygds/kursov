@@ -11,17 +11,44 @@
 
 <body>
     <header class="header"> <!--HEADER START-->
-        <div class="header__logo">
-            <img src="./img/LOGO.svg" alt="logo">
+        <div class="header__body">
+            <div class="header__logo">
+                <img src="./img/LOGO.svg" alt="logo">
+            </div>
+            <div class="header__altlogo1">
+                <img src="./img/altlogo1.svg" alt="logo">
+            </div>
+            <div class="header__altlogo2">
+                <img src="./img/altlogo2.svg" alt="logo">
+            </div>
+            <div class="header__close" id="close">
+                <img src="./img/close.svg" alt="close">
+            </div>
+            <div class="header__burger" id="burger">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <title>paragraph-justify</title>
+                    <path class="burger-path" d="M0 2h32v4h-32zM0 8h32v4h-32zM0 14h32v4h-32zM0 20h32v4h-32zM0 26h32v4h-32z"></path>
+                    </svg>
+            </div>
+            <nav class="header__nav">
+                <a class="nav__link" href="#!">Главная</a>
+                <a class="nav__link" href="#!">Конкурс</a>
+                <a class="nav__link" href="#!">Фотографии</a>
+                <a class="nav__link" href="#!">Контакты</a>
+            </nav>
+        </div> 
+        <div class="header__alt-nav" id="alt-nav">
+            <a class="alt-nav__link" href="#!">Главная</a>
+            <a class="alt-nav__link" href="#!">Конкурс</a>
+            <a class="alt-nav__link" href="#!">Фотографии</a>
+            <a class="alt-nav__link" href="#!">Контакты</a>
         </div>
-        <nav class="header__nav">
-            <a class="nav__link" href="#!">Главная</a>
-            <a class="nav__link" href="#!">Конкурс</a>
-            <a class="nav__link" href="#!">Фотографии</a>
-            <a class="nav__link" href="#!">Контакты</a>
-        </nav>
     </header> <!--HEADER END-->
     <main class="main"> <!--MAIN START-->
+        <div class="main__alt-title">
+            Взгляните на жизнь
+            иначе!
+        </div> 
         <div class="main__content">
             <div class="main__title">
                 Взгляните <br> на жизнь <br>
@@ -40,6 +67,19 @@
             </div>
         </div>
         <img src="./img/phone.png" alt="" class="main__picture">
+        <div class="main__block">
+            <button class="main__btn">
+                Скачать приложение
+            </button>
+            <div class="social">
+                <img src="./img/apple-logo.svg" alt="apple">
+                <img src="./img/android-logo.svg" alt="android">
+                <img src="./img/microsoft-logo.svg" alt="microsoft">
+            </div>
+            <div class="main__descrtiption">
+                Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8
+            </div>
+        </div>
     </main> <!--MAIN END-->
     <section class="offer"> <!--PHONE AND GRID START-->
         <div class="offer__title">
@@ -51,15 +91,16 @@
             <img class="iphone3-icon" src="./img/iphone3.png" alt="phone">
             <img class="iphone2-icon" src="./img/iphone2.png" alt="phone">
             <img class="iphone1-icon" src="./img/iphone1.png" alt="phone">
+            <img src="./img/iphonealt.png" alt="phone" class="alt-iphone">
             <div class="title1">
-                Поднимает <br>
+                Поднимает 
                 настроение
             </div>
             <div class="title2">
-                Меняет мир <br>вокруг
+                Меняет мир вокруг
             </div>
             <div class="title3">
-                Заводит <br>
+                Заводит 
                 новых друзей
             </div>
             <div class="desc1">
@@ -79,6 +120,21 @@
             <div class="effect__subtitle">Британские ученые провели исследования и доказали, <br>
                 что положительный эффект от использования приложения <br> длится целые сутки!</div>
             <a href="#!" class="effect__link">Узнать больше об исследовании</a> <!--PHONE AND GRID END-->
+    </section>
+
+    <!-- Стили в файле offer-->
+    <section class="alt__effect">                   
+        <div class="alt__effect__container">
+            <div class="alt__effect__img">
+                <img class="timer__alt" src="./img/timerall.png" alt="timer">
+            </div>
+            <div class="alt__effect__content">
+                <div class="effect__title__alt">Эффект на 24 часа!</div>
+                <div class="effect__subtitle__alt">Британские ученые провели исследования и доказали, <br>
+                    что положительный эффект от использования приложения <br> длится целые сутки!</div>
+                <a href="#!" class="effect__link__alt">Узнать больше об исследовании</a>
+            </div>
+        </div>
     </section>
     <section class="slider__body">
         <div class="quotes">
@@ -121,12 +177,13 @@
                     <div class="prof">22 лет, неизвестно</div>
                 </div>
             </div>
+            <div class="labels"> <!--LABELS FOR ADAPTIVE-->
+                <label class="label1 active" for="first" id="one"></label>
+                <label class="label2" for="middle" id="two"></label>
+                <label class="label3" for="last" id="three"></label>
+            </div>
         </div> <!--SLIDER END-->
-        <div class="labels"> <!--LABELS FOR ADAPTIVE-->
-            <label class="label1" for="first" id="one"></label>
-            <label class="label2" for="middle" id="two"></label>
-            <label class="label3" for="last" id="three"></label>
-        </div>
+
     </section>
     <section class="price"> <!--GRID TABLE START-->
         <div class="grid__table">
@@ -204,7 +261,7 @@
         </div>
         <div class="quastion__container"> <!--MAP CONTAINER START-->
             <div class="triangle">
-                <img src="./img/footer.svg" alt="">
+                <img class="triangle-img" src="./img/footer.svg" alt="triangle">
             </div>
             <div class="map" id="map">
             </div>
